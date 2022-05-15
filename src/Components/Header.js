@@ -1,5 +1,6 @@
 import { AppBar, Container, MenuItem, Select, Toolbar, Typography, makeStyles, createTheme, ThemeProvider} from "@material-ui/core";
 import { useNavigate } from "react-router-dom";
+import { CryptoState } from "../Pages/CryptoContext";
 
 const useStyles = makeStyles(() => ({
   title: {
@@ -14,6 +15,10 @@ const useStyles = makeStyles(() => ({
 const Header = () => {
   const classes = useStyles();
   const history = useNavigate();
+
+  const { currency, setCurrency } = CryptoState();
+
+
   const darkTheme = createTheme({
     palette: {
       primary: {
@@ -41,6 +46,8 @@ const Header = () => {
             <Select 
               variant="outlined"
               style={{ width: 100, height: 40, marginRight: 15 }}
+              value={currency}
+              onChange={(e) => setCurrency(e.target.value)}
             >
               <MenuItem value={'USD'}>USD</MenuItem>
               <MenuItem value={'EUR'}>EUR</MenuItem>
