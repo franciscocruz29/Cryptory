@@ -28,7 +28,7 @@ const Banner = () => {
       <Container className={classes.bannerContent}>
         <div className={classes.tagline}>
         <Typography
-            variant="h2"
+            variant="h1"
             style={{
               fontWeight: "bold",
               marginBottom: 15,
@@ -38,7 +38,7 @@ const Banner = () => {
             Cryptory
           </Typography>
           <Typography
-            variant="subtitle2"
+            variant="subtitle1"
             style={{
               color: "darkgrey",
               textTransform: "capitalize",
