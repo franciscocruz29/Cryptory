@@ -1,7 +1,6 @@
 import { createContext, useContext } from "react";
 import { useState, useEffect } from "react";
 
-
 const Crypto = createContext()
 
 function CryptoContext({ children }) {

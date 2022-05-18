@@ -1,6 +1,6 @@
 import { AppBar, Container, MenuItem, Select, Toolbar, Typography, makeStyles, createTheme, ThemeProvider} from "@material-ui/core";
 import { useNavigate } from "react-router-dom";
-import { CryptoState } from "../Pages/CryptoContext";
+import { CryptoState } from "../config/CryptoContext";
 
 const useStyles = makeStyles(() => ({
   title: {
