@@ -107,7 +107,7 @@ const CoinPage = () => {
                 fontFamily: "Montserrat",
               }}
             >
-              {numberWithCommas(coin?.market_cap_rank)}
+              {coin?.market_cap_rank}
             </Typography>
           </span>
 
