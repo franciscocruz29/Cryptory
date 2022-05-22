@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { TrendingCoins } from "../../config/api";
-import { CryptoState } from "../../config/CryptoContext";
+import { CryptoState } from "../../Pages/CryptoContext";
 import AliceCarousel from "react-alice-carousel";
 import { Link } from "react-router-dom";
 import { numberWithCommas } from "../CoinsTable";
