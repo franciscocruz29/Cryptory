@@ -5,7 +5,7 @@ import { Container, createTheme, TableCell, LinearProgress, ThemeProvider, Typog
 import axios from "axios";
 import { CoinList } from "../config/api";
 import { useNavigate } from "react-router-dom";
-import { CryptoState } from "../config/CryptoContext";
+import { CryptoState } from "../Pages/CryptoContext";
 
 export function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
