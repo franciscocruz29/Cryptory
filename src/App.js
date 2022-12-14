@@ -1,4 +1,4 @@
-import { makeStyles } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core"; // material UI V4 -- https://v4.mui.com
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './Components/Header';
@@ -7,7 +7,8 @@ import CoinPage from './Pages/CoinPage';
 import Alert from './Components/Alert';
 
 function App() {
-  const useStyles = makeStyles(() => ({
+  // makeStyles(styles, [options]) => hook -- https://v4.mui.com/styles/api/
+  const useStyles = makeStyles(() => ({ 
     App: {
       backgroundColor: "#14161a",
       color: "white",

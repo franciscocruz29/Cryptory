@@ -4,7 +4,7 @@ import { auth, db } from "../firebase";
 import axios from "axios";
 import { CoinList } from "../config/api";
 import { onSnapshot, doc } from "firebase/firestore";
-
+// https://reactjs.org/docs/context.html
 const Crypto = createContext()
 
 function CryptoContext({ children }) {
@@ -60,7 +60,7 @@ function CryptoContext({ children }) {
     fetchCoins();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currency]);
-  
+
   return (
     <Crypto.Provider
       value={{
