@@ -47,18 +47,17 @@ const CoinsTable = () => {
     },
   });
 
-  const fetchCoins = async () => {
-    setLoading(true);
-    const { data } = await axios.get(CoinList(currency));
-    console.log(data);
-
-    setCoins(data);
-    setLoading(false);
-  };
-
   useEffect(() => {
+    const fetchCoins = async () => {
+      setLoading(true);
+      const { data } = await axios.get(CoinList(currency));
+      console.log(data);
+
+      setCoins(data);
+      setLoading(false);
+    };
+
     fetchCoins();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currency]);
 
   const handleSearch = () => {
